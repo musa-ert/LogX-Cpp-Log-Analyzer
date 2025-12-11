@@ -1,0 +1,12 @@
+# Derleme dosyalari
+bin/
+obj/
+LogX-tool/bin/
+LogX-tool/obj/
+
+# Cikti dosyalari
+*.exe
+*.o
+*.layout
+*.depend
+*.cbp
