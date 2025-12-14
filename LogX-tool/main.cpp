@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "logentry.h"
 using namespace std;
 
 int main()
@@ -15,9 +16,15 @@ int main()
         return 1;
     }
     string satir;
-    while(getline(dosyaoku, satir)){
-        cout<<satir<<endl;
+    while(getline(dosyaoku,satir)){
+        logentry deneme(satir);
+        if(deneme.getKontrol()=="[ERROR]"){
+            deneme.printlog();
+        }
+
     }
+
+
     dosyaoku.close();
     return 0;
 }
