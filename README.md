@@ -14,7 +14,7 @@ Projede aşağıdaki teknik yetkinlikler kullanılmıştır:
 * **OOP (Nesne Yönelimli Programlama):**
 * **STL Vectors (`std::vector`):** 
 * **Dosya İşlemleri (File I/O):** 
-* **String Parsing (Ayrıştırma):**  `find` ve `substr` fonksiyonları ile **özel bir parsing algoritması** geliştirilmiştir.
+* **String Parsing (Ayrıştırma):**  `find` ve `substr` fonksiyonları ile geliştirilmiştir.
 
 ## Nasıl Çalışır?
 
