@@ -7,28 +7,28 @@ using namespace std;
 
 int main()
 {
-    vector<logentry> hatasayisi;
-    string o_dosya;
+    vector<logentry> errorLogs;
+    string inputFilename;
     cout<<"Welcome to Log Analysis Tool"<<endl;
     cout<<"Please enter a file name(look like this blabla.txt)"<<endl;
-    cin>>o_dosya;
-    ifstream dosyaoku(o_dosya);
-    if(!dosyaoku.is_open()){
+    cin>>inputFilename;
+    ifstream logFile(inputFilename);
+    if(!logFile.is_open()){
         cout<<"Error: File could not be opened."<<endl;
         return 1;
     }
-    string satir;
-    while(getline(dosyaoku,satir)){
-        if(satir.empty()) continue;
-        logentry deneme(satir);
-        if(deneme.getKontrol()=="[ERROR]"){
-            deneme.printlog();
-            hatasayisi.push_back(deneme);
+    string line;
+    while(getline(logFile,line)){
+        if(line.empty()) continue;
+        logentry currentLog(line);
+        if(currentLog.getKontrol()=="[ERROR]"){
+            currentLog.printlog();
+            errorLogs.push_back(currentLog);
         }
 
     }
     cout<<"-----------------------------------------";
-    cout<<"\n\t\tERROR counter:"<<hatasayisi.size()<<endl;
-    dosyaoku.close();
+    cout<<"\n\t\tERROR counter:"<<errorLogs.size()<<endl;
+    logFile.close();
     return 0;
 }

@@ -1,5 +1,8 @@
 LogX - Otomatik Log Analiz Aracı (C++)
 
+
+Bu proje, C++ ve Sistem Programlama becerilerimi pekiştirmek ve veri yapıları konusundaki hakimiyetimi göstermek amacıyla hazırlanmış bir çalışmadır. 
+
 LogX, büyük sunucu log (kayıt) dosyalarını okumak, analiz etmek ve kritik hataları tespit etmek için geliştirilmiş **C++ tabanlı bir komut satırı aracıdır.**
 
 Bu proje, yapılandırılmamış metin verilerini işleyerek anlamlı raporlar oluşturmak amacıyla **Nesne Yönelimli Programlama (OOP)** prensipleri kullanılarak tasarlanmıştır.
